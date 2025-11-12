@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div{
+            width: 300px;
+            height: 300px;
+        }
+
+        .box{
+            background-color: aqua;
+            border: 5px solid black;
+            margin: 10px 20px 10px 20px;
+            /* isto kao: margin: 10px 20px */
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .drugi{
+            background-color: blueviolet;
+            border: 4px dashed black;
+            margin-top: 40px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body bgcolor="gray">
+    <h1>Box model</h1>
+    <div class="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias rerum beatae, tempore provident sequi ex perspiciatis 
+        voluptatum minus cupiditate delectus nobis incidunt aut, reiciendis ratione neque numquam. Exercitationem, modi quas!
+    </div>
+    <div class="drugi">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam doloremque iusto sint nam debitis quam nostrum officia architecto est corporis. 
+        Quaerat tenetur atque nemo non, officiis exercitationem! Vel, repellendus porro.
+        Saepe consectetur placeat itaque a deleniti esse excepturi repudiandae dolor dignissimos rerum repellat quos facilis nostrum fugiat necessitatibus, 
+        eos praesentium maxime porro quo ea harum neque laborum. Quisquam, maxime facilis?
+    </div>
+
+
+</body>
+</html>
