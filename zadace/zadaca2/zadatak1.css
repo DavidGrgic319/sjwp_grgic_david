@@ -165,3 +165,21 @@ p{
     background-color: black;
     z-index: -1;
 }
+.f{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 240px;
+    margin-left: 230px;
+    object-fit: cover;
+}
+.i{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 240px;
+    margin-left: 330px;
+    object-fit: cover;
+}
