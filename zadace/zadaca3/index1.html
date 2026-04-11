@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadaca</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background: #0c0c0d;
+            color: whitesmoke;
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 35px;
+            background: #29292e;
+        }
+
+        nav label{
+            margin-left: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        nav label{
+            color: beige;
+        }
+        input[type="radio"]{
+            display: none;
+        }
+        .section{
+            display: none;
+            padding: 30px;
+        }
+
+        #tab-filmovi:checked ~ .kontent #filmovisection {
+    display: block;
+}
+
+#serije:checked ~ .kontent #serijesection {
+    display: block;
+}
+
+#igrice:checked ~ .kontent #igricesection {
+    display: block;
+}
+
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 2px;
+        }
+        .card{
+            padding: 30px;
+            border-radius: 10px;
+            border: 2px bold transparent;
+            text-align: center;
+        }
+        .card img{
+            width: 280px;
+            height: 400px;
+            border-radius: 50%;
+            margin-top: -15px;
+            border-radius: 0px;
+        }
+
+        .card:hover{
+            transform: scale(1.05);
+            border: white solid 2px;
+        }
+    </style>
+</head>
+<body>
+    <input type="radio" name="tab" id="tab-filmovi" checked>
+    <input type="radio" name="tab" id="tab-serije">
+    <input type="radio" name="tab" id="tab-igrice">
+
+    <header>
+    <nav>
+        <label for="tab-filmovi">FILMOVI</label>
+        <label for="tab-serije">SERIJE</label>
+        <label for="tab-igrice">IGRICE</label>
+    </nav>
+    </header>
+
+    <div class="kontent">
+
+        <div id="filmovisection" class="section">
+            <div class="grid">
+                <div class="card">
+                    <a href="https://www.imdb.com/title/tt0499549/">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/d/d6/Avatar_%282009_film%29_poster.jpg" alt="">
+                    </a>
+                    <p>Avatar (2009)</p>
+                </div>
+                <div class="card">
+                    <a href="https://www.imdb.com/title/tt1630029/">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNWI0Y2NkOWEtMmM2OC00MjQ3LWI1YzItZGQxYzQ3NzI4NWZmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="">
+                    </a>
+                    <p>Avatar: The Way of Water (2022)</p>
+                </div>
+                <div class="card">
+                    <a href="https://www.imdb.com/title/tt1757678/">
+                        <img src="https://www.cinestar.de/media/cache/web_l/media//filmbilder/a/avatar-fire-and-ash/avatar-fire-and-ash-0020442c7e3809612cb8e520004b4251_poster.jpg" alt="">
+                    </a>
+                    <p>Avatar: Fire and Ash (2025)</p>
+                </div>
+                <div class="card">
+                    <a href="https://www.imdb.com/title/tt1790864/">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMjUyNTA3MTAyM15BMl5BanBnXkFtZTgwOTEyMTkyMjE@._V1_.jpg" alt="">
+                    </a>
+                    <p>The Maze Runner (2014)</p>
+                </div>
+                <div class="card">
+                    <a href="https://www.imdb.com/title/tt0120737/">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNzIxMDQ2YTctNDY4MC00ZTRhLTk4ODQtMTVlOWY4NTdiYmMwXkEyXkFqcGc@._V1_.jpg" alt="">
+                    </a>
+                    <p>The Lord of the Rings: The Fellowship of the Ring (2002)</p>
+                </div>
+                <div class="card">
+                    <a href="https://www.imdb.com/title/tt0232500/">
+                        <img src="https://m.media-amazon.com/images/I/71FqdLf2KKL._AC_UF894,1000_QL80_.jpg" alt="">
+                    </a>
+                    <p>The Fast and the Furious (2001)</p>
+                </div>
+                <div class="card">
+                    <a href="https://www.imdb.com/title/tt1016150/">
+                        <img src="https://m.media-amazon.com/images/M/MV5BOWJiYWMyYTktZThhOS00ZjgxLWE0YTQtZDMyNTQxMjMyYjI2XkEyXkFqcGc@._V1_.jpg" alt="">
+                    </a>
+                    <p>All Quiet on the Western Front (2022)</p>
+                </div>
+                <div class="card">
+                    <a href="https://www.imdb.com/title/tt8579674/">
+                        <img src="https://m.media-amazon.com/images/S/pv-target-images/932895b085677a859bca8e22deca44e376a0bcbc80879ae6d7a0a1048c7fc7fa.jpg" alt="">
+                    </a>
+                    <p>1917 (2019)</p>
+
+                </div>
+                <div class="card">
+                    <a href="https://www.imdb.com/title/tt1375670/">
+                        <img src="https://m.media-amazon.com/images/S/pv-target-images/3c7e9ab478a411ec9915e1133270b63b59456a083b4a72084e48c89c540da464.jpg" alt="">
+                    </a>
+                    <p>Grown Ups (2010)</p>
+                </div>
+                <div class="card">
+                    <a href="https://www.imdb.com/title/tt1119646/">
+                        <img src="https://images.moviesanywhere.com/eebd935228b3a121b0b07c023ca5651e/92201c53-a2d7-40f9-a0c9-ae018f711cfc.jpg" alt="">
+                    </a>
+                    <p>The Hangover (2009)</p>
+                </div>
+                <div class="card">
+                    <a href="https://www.imdb.com/title/tt10872600/">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMmFiZGZjMmEtMTA0Ni00MzA2LTljMTYtZGI2MGJmZWYzZTQ2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="">
+                    </a>
+                    <p>Spider-Man: No Way Home (2021)</p>
+                </div>
+                <div class="card">
+                    <a href="https://www.imdb.com/title/tt1636826/">
+                        <img src="https://theflorala.com/wp-content/uploads/2012/03/a8fc067f6f9981a142b0fdb190bd403c-607x900.jpg" alt="">
+                    </a>
+                    <p>Project X (2012)</p>
+                </div>
+                <div class="card">
+                    <a href="https://www.imdb.com/title/tt2278388/">
+                        <img src="https://budapest-travel-tips.com/wp-content/uploads/2019/05/Grand_Budapest_Hotel_film.jpg" alt="">
+                    </a>
+                    <p>The Grand Budapest Hotel (2014)</p>
+                </div>
+                <div class="card">
+                    <a href="https://www.imdb.com/title/tt8946378/">
+                        <img src="https://m.media-amazon.com/images/M/MV5BZDU5ZTRkYmItZjg0Mi00ZTQwLThjMWItNWM3MTMxMzVjZmVjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="">
+                    </a>
+                    <p>Knives Out (2019)</p>
+                </div>
+                <div class="card">
+                    <a href="https://www.imdb.com/title/tt0468569/">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UX1000_.jpg" alt="">
+                    </a>
+                    <p>The Dark Knight (2008)</p>
+                </div>
+                <div class="card">
+                    <a href="https://www.imdb.com/title/tt0137523/">
+                        <img src="https://m.media-amazon.com/images/M/MV5BOTgyOGQ1NDItNGU3Ny00MjU3LTg2YWEtNmEyYjBiMjI1Y2M5XkEyXkFqcGc@._V1_.jpg" alt="">
+                    </a>
+                    <p>Fight Club (1999)</p>
+                </div>
+                <div class="card">
+                    <a href="https://www.imdb.com/title/tt0418279/">
+                        <img src="https://m.media-amazon.com/images/I/71yx6XzPPUL._AC_UF1000,1000_QL80_.jpg" alt="">
+                    </a>
+                    <p>Transformers (2007)</p>
+                </div>
+                <div class="card">
+                    <a href="https://www.imdb.com/title/tt31036941/">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNjg2NTcwYWQtYzk4NS00MTJhLWEzZjItMzIxNjk3YzlkYzU0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="">
+                    </a>
+                    <p>Jurassic World: Rebirth (2025)</p>
+                </div>
+                <div class="card">
+                    <a href="https://www.imdb.com/title/tt0095705/">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXspuiPwPwmormpQvTR59eqLfoZNTJsqHaKA&s" alt="">
+                    </a>
+                    <p>The Naked Gun: From the Files of Police Squad! (1988)</p>
+                </div>
+                <div class="card">
+                    <a href="https://www.imdb.com/title/tt29585679/">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMDJkZDQxZjUtZTliYi00NDM2LWFjNTctMmJhNDkxZDNlOTRkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="">
+                    </a>
+                    <p>Dražen (2024)</p>
+                </div>
+            </div>
+        </div>
+        <div id="serijesection" class="section">
+            <div class="grid">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+        </div>
+        <div id="igricesection" class="section">
+            <div class="grid">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
