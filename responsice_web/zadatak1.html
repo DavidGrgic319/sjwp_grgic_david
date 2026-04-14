@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1. Zadatak</title>
+    <style>
+        *{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100vh;
+    gap: 2px;
+    background: white;
+}
+
+.box div{
+    border: 2px solid white;
+}
+
+.a, .b{
+    background: orange;
+}
+.c{
+    background: yellowgreen;
+}
+.d, .e, .f{
+    background: steelblue;
+}
+.g, .h,.i,.j{
+    background: lightgray;
+}
+main{
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 0 100%;
+}
+
+.a, .b{
+    height: 10vh;
+    flex: 0 49%;
+}
+
+.box div{
+    flex: 0 0 100%;
+    height: 11.11%;
+}
+@media(max-width: 1024px){
+    
+    .a,.b { 
+        flex: 0 0 100%;
+        height: 10%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+        <div class="e"></div>
+        <div class="f"></div>
+        <div class="g"></div>
+        <div class="h"></div>
+        <div class="i"></div>
+        <div class="j"></div>
+    </div>
+</body>
+</html>
