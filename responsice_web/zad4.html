@@ -20,14 +20,16 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 50vh;
+  gap: 2px;
 }
 
-/* BOJE */
 .a { background: orangered; }
 .b { background: orange; }
 .c { background: gold; }
 .d { background: yellowgreen; }
+.e{ background: blue;}
+.f{background: purple;}
 
 .container > div {
   width: 100%;
@@ -39,14 +41,14 @@ body {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width:1023px){
   .container {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   .container > div {
-    width: 50%;
+    width: 48%;
     height: 50%;
   }
 }
@@ -54,11 +56,12 @@ body {
 
 @media (min-width: 1024px) {
   .container {
-    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .container > div {
-    width: 25%;
+    width: 30%;
     height: 100%;
   }
 }
@@ -68,10 +71,12 @@ body {
 <body>
 
 <div class="container">
-  <div class="a">1</div>
-  <div class="b">2</div>
-  <div class="c">3</div>
-  <div class="d">4</div>
+  <div class="a"> KORISNICI</div>
+  <div class="b"> PRODAJA</div>
+  <div class="c"> PORUKE</div>
+  <div class="d">STATISTIKA</div>
+  <div class="e"> ZADACI</div>
+  <div class="f"> POSTAVKE</div>
 </div>
 
 </body>
