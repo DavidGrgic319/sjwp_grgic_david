@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moja Osobna Web Stranica</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#hero">
+        <i class="bi bi-person-circle me-2"></i>Ivan Horvat
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#o-meni">O meni</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hobiji">Hobiji</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vjestine">Vještine</a></li>
+          <li class="nav-item"><a class="nav-link" href="#zadaci">Zadaci</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero" class="hero-section d-flex align-items-center">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative z-1 text-white text-center">
+      <p class="hero-subtitle text-uppercase letter-spacing mb-3">Dobrodošli na moju stranicu</p>
+      <h1 class="hero-title display-2 fw-black mb-4">Ivan <span class="text-accent">Horvat</span></h1>
+      <p class="hero-desc lead mb-5">Student računarstva · Gamer · Ljubitelj serija</p>
+      <a href="#o-meni" class="btn btn-accent btn-lg px-5 py-3 rounded-pill">
+        Saznaj više <i class="bi bi-arrow-down-circle ms-2"></i>
+      </a>
+    </div>
+    <div class="hero-scroll-hint">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ===== O MENI ===== -->
+  <section id="o-meni" class="section-padding bg-dark-soft">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <p class="section-tag">Upoznaj me</p>
+        <h2 class="section-title">O meni</h2>
+      </div>
+      <div class="row align-items-center g-5">
+        <div class="col-lg-4 text-center">
+          <div class="profile-img-wrapper mx-auto">
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+              alt="Profilna slika – Ivan Horvat"
+              class="profile-img"
+            />
+            <div class="profile-badge">
+              <i class="bi bi-controller"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <h3 class="fw-bold mb-3">Pozdrav! Ja sam <span class="text-accent">Ivan Horvat</span></h3>
+          <p class="lead mb-3">
+            Student sam 2. godine preddiplomskog studija računarstva. Živim u Vinkovcima i
+            strastveno pratim sve što ima veze s tehnologijom, gaming-om i dobrim TV serijama.
+          </p>
+          <p class="mb-3">
+            Uz fakultet volim programirati male projekte u web tehnologijama — HTML, CSS, JavaScript i
+            Python su mi omiljeni alati. Slobodno vrijeme provodim igrajući igrice s prijateljima ili
+            gledajući serije kasno u noć.
+          </p>
+          <p class="mb-4">
+            Cilj mi je jednog dana raditi kao full-stack developer, a trenutno gradim bazu znanja
+            kroz projekte i kolegije na fakultetu.
+          </p>
+          <div class="row g-3 text-center">
+            <div class="col-4">
+              <div class="stat-card">
+                <span class="stat-num">3+</span>
+                <span class="stat-label">godine gaminga</span>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="stat-card">
+                <span class="stat-num">20+</span>
+                <span class="stat-label">odigranih igara</span>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="stat-card">
+                <span class="stat-num">15+</span>
+                <span class="stat-label">pogledanih serija</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOBIJI ===== -->
+  <section id="hobiji" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <p class="section-tag">Što volim raditi</p>
+        <h2 class="section-title">Moji Hobiji</h2>
+      </div>
+
+      <!-- Gaming -->
+      <div class="hoby-block row align-items-start g-4 mb-5 pb-5 border-bottom-accent">
+        <div class="col-lg-3 text-center">
+          <div class="hoby-icon-wrap mx-auto mb-3">
+            <i class="bi bi-controller fs-1"></i>
+          </div>
+          <h4 class="fw-bold">Gaming</h4>
+          <span class="badge badge-accent">Omiljeni hobi</span>
+        </div>
+        <div class="col-lg-9">
+          <p class="mb-3">
+            <strong>The Witcher 3: Wild Hunt</strong> je igra koja me je zauvijek promijenila kao
+            igrača. Otvoreni svijet, zapletene priče i moralne dileme kakve sam rijetko vidio u
+            bilo kom mediju — svaki NPC ima svoju priču, svaki izbor ima posljedice.
+          </p>
+          <p class="mb-3">
+            Osim RPG-ova, obožavam strategije poput <em>Civilization VI</em> gdje mogu satima
+            graditi imperij i planirati diplomatske (ili vojne!) poteze. Multiplayer je posebna
+            kategorija — <strong>Valorant</strong> i <strong>League of Legends</strong> su moji
+            redovni večernji rituali s ekipom.
+          </p>
+          <p class="mb-3">
+            Ono što mi se sviđa kod gaming-a nije samo zabava nego i način razmišljanja koji
+            razvija — strateško planiranje, brzo donošenje odluka, timski rad. Smatram da su
+            igrice podcijenjeni medij koji može pričati priče jednako moćno kao film ili knjiga.
+          </p>
+          <div class="row g-2 mt-3">
+            <div class="col-auto"><span class="game-tag"><i class="bi bi-joystick me-1"></i>The Witcher 3</span></div>
+            <div class="col-auto"><span class="game-tag"><i class="bi bi-joystick me-1"></i>Valorant</span></div>
+            <div class="col-auto"><span class="game-tag"><i class="bi bi-joystick me-1"></i>Civilization VI</span></div>
+            <div class="col-auto"><span class="game-tag"><i class="bi bi-joystick me-1"></i>League of Legends</span></div>
+            <div class="col-auto"><span class="game-tag"><i class="bi bi-joystick me-1"></i>Elden Ring</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Serije -->
+      <div class="hoby-block row align-items-start g-4 mb-5 pb-5 border-bottom-accent">
+        <div class="col-lg-3 text-center">
+          <div class="hoby-icon-wrap mx-auto mb-3 icon-purple">
+            <i class="bi bi-tv fs-1"></i>
+          </div>
+          <h4 class="fw-bold">Serije</h4>
+          <span class="badge badge-purple">Večernji ritual</span>
+        </div>
+        <div class="col-lg-9">
+          <p class="mb-3">
+            <strong>Breaking Bad</strong> je, bez rasprave, najgledanija serija svih vremena za
+            mene. Walter White je jedan od najkompleksnijih likova ikad napisanih — transformacija
+            iz poniznog nastavnika kemije u bezobzirnog kriminalca je brutalno realistična i
+            zastrašujuće uvjerljiva.
+          </p>
+          <p class="mb-3">
+            Uz Breaking Bad, <strong>Dark</strong> (njemačka Netflix serija) me je potpuno
+            slomila intelektualno — tri sezone isprepletenih vremenskih linija, složena genealogija
+            i filozofska pitanja o sudbini i slobodnoj volji. Morao sam crtati dijagrame dok sam
+            gledao.
+          </p>
+          <p class="mb-3">
+            Trenutno pratim <strong>The Bear</strong> — serija o restoranu koja je zapravo duboka
+            studija o anksioznosti, porodičnoj traumi i potrazi za savršenstvom. Nevjerojatna
+            kinematografija i gluma.
+          </p>
+          <div class="row g-2 mt-3">
+            <div class="col-auto"><span class="series-tag"><i class="bi bi-camera-video me-1"></i>Breaking Bad</span></div>
+            <div class="col-auto"><span class="series-tag"><i class="bi bi-camera-video me-1"></i>Dark</span></div>
+            <div class="col-auto"><span class="series-tag"><i class="bi bi-camera-video me-1"></i>The Bear</span></div>
+            <div class="col-auto"><span class="series-tag"><i class="bi bi-camera-video me-1"></i>Chernobyl</span></div>
+            <div class="col-auto"><span class="series-tag"><i class="bi bi-camera-video me-1"></i>Succession</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Programiranje -->
+      <div class="hoby-block row align-items-start g-4">
+        <div class="col-lg-3 text-center">
+          <div class="hoby-icon-wrap mx-auto mb-3 icon-green">
+            <i class="bi bi-code-slash fs-1"></i>
+          </div>
+          <h4 class="fw-bold">Programiranje</h4>
+          <span class="badge badge-green">Budućnost</span>
+        </div>
+        <div class="col-lg-9">
+          <p class="mb-3">
+            Programiranje mi je i hobi i buduća karijera. Počeo sam s HTML-om i CSS-om u
+            srednjoj školi i od tada nisam stao. Fascinira me kako iz praznog editora možeš
+            izgraditi nešto što drugi ljudi koriste — od jednostavne web stranice do kompleksne
+            aplikacije.
+          </p>
+          <p class="mb-3">
+            Volim rješavati probleme na <strong>LeetCode-u</strong> vikendom, pratiti
+            tech YouTube kanale (Fireship, Theo — t3.gg) i čitati o novim frameworkovima.
+            Uvijek postoji nešto novo za naučiti u web developmentu, što može biti i
+            frustrirajuće i uzbudljivo istovremeno.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VJEŠTINE ===== -->
+  <section id="vjestine" class="section-padding bg-dark-soft">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <p class="section-tag">Što znam</p>
+        <h2 class="section-title">Vještine</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="skill-card h-100">
+            <h5 class="skill-card-title mb-4"><i class="bi bi-laptop me-2 text-accent"></i>Tehničke vještine</h5>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-1"><span>HTML &amp; CSS</span><span class="text-accent">90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+            </div>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-1"><span>Bootstrap</span><span class="text-accent">75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+            </div>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-1"><span>JavaScript</span><span class="text-accent">60%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+            </div>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-1"><span>Python</span><span class="text-accent">55%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div>
+            </div>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-1"><span>SQL</span><span class="text-accent">50%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="width:50%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="skill-card h-100">
+            <h5 class="skill-card-title mb-4"><i class="bi bi-people me-2 text-accent"></i>Ostale vještine i interesi</h5>
+            <div class="row g-3">
+              <div class="col-6">
+                <div class="soft-skill-item">
+                  <i class="bi bi-puzzle text-accent fs-4 mb-2"></i>
+                  <p class="mb-0 fw-semibold">Problem solving</p>
+                  <small class="text-muted">Rješavanje logičkih zadataka</small>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="soft-skill-item">
+                  <i class="bi bi-translate text-accent fs-4 mb-2"></i>
+                  <p class="mb-0 fw-semibold">Engleski jezik</p>
+                  <small class="text-muted">B2/C1 razina</small>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="soft-skill-item">
+                  <i class="bi bi-people-fill text-accent fs-4 mb-2"></i>
+                  <p class="mb-0 fw-semibold">Timski rad</p>
+                  <small class="text-muted">Grupni projekti i gaming</small>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="soft-skill-item">
+                  <i class="bi bi-lightbulb text-accent fs-4 mb-2"></i>
+                  <p class="mb-0 fw-semibold">Kreativnost</p>
+                  <small class="text-muted">Dizajn i UX razmišljanje</small>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="soft-skill-item">
+                  <i class="bi bi-camera text-accent fs-4 mb-2"></i>
+                  <p class="mb-0 fw-semibold">Fotografija</p>
+                  <small class="text-muted">Mobilna fotografija</small>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="soft-skill-item">
+                  <i class="bi bi-music-note-beamed text-accent fs-4 mb-2"></i>
+                  <p class="mb-0 fw-semibold">Glazba</p>
+                  <small class="text-muted">Slušanje i otkrivanje bendova</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ZADACI ===== -->
+  <section id="zadaci" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <p class="section-tag">Akademski rad</p>
+        <h2 class="section-title">Popis Zadataka</h2>
+      </div>
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="task-card">
+            <div class="task-number">01</div>
+            <div class="task-body">
+              <span class="task-subject">HTML osnove</span>
+              <h6 class="task-title">Zadatak: Osnove HTML-a</h6>
+              <p class="task-desc">Izrada prve HTML stranice — struktura dokumenta, naslovi, paragrafi, linkovi i slike.</p>
+              <a href="zadatak1.html" class="task-link">Pogledaj <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="task-card">
+            <div class="task-number">02</div>
+            <div class="task-body">
+              <span class="task-subject">CSS stilizacija</span>
+              <h6 class="task-title">Zadatak: Stilovi i layout</h6>
+              <p class="task-desc">Primjena CSS-a na HTML elemente — boje, fontovi, margine, padding i box model.</p>
+              <a href="zadatak2.html" class="task-link">Pogledaj <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="task-card">
+            <div class="task-number">03</div>
+            <div class="task-body">
+              <span class="task-subject">CSS Flexbox</span>
+              <h6 class="task-title">Zadatak: Flexbox layout</h6>
+              <p class="task-desc">Izrada responzivnog layouta pomoću CSS Flexbox-a — navigacija, kartice i centriranje.</p>
+              <a href="zadatak3.html" class="task-link">Pogledaj <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="task-card">
+            <div class="task-number">04</div>
+            <div class="task-body">
+              <span class="task-subject">CSS Grid</span>
+              <h6 class="task-title">Zadatak: Grid sustav</h6>
+              <p class="task-desc">Postavljanje elemenata pomoću CSS Grid-a — kompleksni rasporedi i responzivni dizajn.</p>
+              <a href="zadatak4.html" class="task-link">Pogledaj <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="task-card">
+            <div class="task-number">05</div>
+            <div class="task-body">
+              <span class="task-subject">Bootstrap</span>
+              <h6 class="task-title">Zadatak: Bootstrap komponente</h6>
+              <p class="task-desc">Korištenje Bootstrap grid sustava, navbar-a, kartica i ostalih komponenti.</p>
+              <a href="zadatak5.html" class="task-link">Pogledaj <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="task-card task-card-current">
+            <div class="task-number">06</div>
+            <div class="task-body">
+              <span class="task-subject">Bootstrap + CSS</span>
+              <h6 class="task-title">Zadatak: Osobna web stranica ✓</h6>
+              <p class="task-desc">Izrada osobne web stranice s Bootstrap komponentama, externim CSS-om i responzivnim dizajnom.</p>
+              <span class="task-link-current"><i class="bi bi-check-circle-fill me-1"></i>Trenutna stranica</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KONTAKT ===== -->
+  <section id="kontakt" class="section-padding bg-dark-soft">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <p class="section-tag">Povežimo se</p>
+        <h2 class="section-title">Kontakt</h2>
+      </div>
+      <div class="row justify-content-center g-4">
+        <div class="col-md-4 text-center">
+          <div class="contact-card">
+            <i class="bi bi-envelope-fill fs-2 text-accent mb-3"></i>
+            <h6 class="fw-bold mb-1">Email</h6>
+            <a href="mailto:ivan.horvat@example.com" class="contact-link">ivan.horvat@example.com</a>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="contact-card">
+            <i class="bi bi-github fs-2 text-accent mb-3"></i>
+            <h6 class="fw-bold mb-1">GitHub</h6>
+            <a href="https://github.com" target="_blank" class="contact-link">github.com/ivanhorvat</a>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="contact-card">
+            <i class="bi bi-linkedin fs-2 text-accent mb-3"></i>
+            <h6 class="fw-bold mb-1">LinkedIn</h6>
+            <a href="https://linkedin.com" target="_blank" class="contact-link">linkedin.com/in/ivanhorvat</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer py-4">
+    <div class="container text-center">
+      <p class="mb-1 fw-semibold">Ivan Horvat &copy; <span id="year"></span></p>
+      
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    window.addEventListener('scroll', () => {
+      document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) current = s.id; });
+      navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + current));
+    });
+  </script>
+</body>
+</html>

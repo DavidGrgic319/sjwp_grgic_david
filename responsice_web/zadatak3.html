@@ -22,14 +22,20 @@ body {
   height: 100vh;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "header"
+    "main"
+    "left"
+    "right"
+    "footer";
 }
 
 /* BOJE + grid areas */
-.a { background: #ef6b6b;  }
-.b { background: #eee;  }
-.c { background: #e6c75c;  }
-.d { background: #a8d46f;  }
-.e { background: #6aa7c9;  }
+.a { background: #ef6b6b; grid-area: header; }
+.b { background: #eee; grid-area: main; }
+.c { background: #e6c75c; grid-area: left; }
+.d { background: #a8d46f; grid-area: right; }
+.e { background: #6aa7c9; grid-area: footer; }
 
 /* centriranje teksta */
 .container > div {
